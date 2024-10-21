@@ -57,6 +57,8 @@ if ingredients_list:
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response)
+# returning response [502], no idea what that means but it's just error after error from this point onward!
+
 #fv_df = st.dataframe(data=fruityvice_response.json(), use_conatiner_width=True)
 
 
