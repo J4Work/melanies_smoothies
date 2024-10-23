@@ -53,9 +53,9 @@ if ingredients_list:
         session.sql(my_insert_stmt).collect()
         st.success(f'Your Smoothie is ordered, {name_on_order}!', icon="✅")
 
-    import requests
-    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-    st.text(fruityvice_response)
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
 # returning response [502], no idea what that means but it's just error after error from this point onward!
 
 #fv_df = st.dataframe(data=fruityvice_response.json(), use_conatiner_width=True)
